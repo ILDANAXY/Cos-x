@@ -24,13 +24,13 @@ namespace Cos_от_x
             double xmax = Convert.ToDouble(Console.ReadLine());
             double x = xmin; // текущее значение Х
             double[,] mtrXY = new double[1000, 2]; // массив аргументов
-            int currIndex = 0;// текущий индекс в массиве
+            int currIndex = 0; // текущий индекс в массиве
             while (x <= xmax)
             {
-                mtrXY[currIndex, 0] = x;// запишем в массив Х
+                mtrXY[currIndex, 0] = x; // запишем в массив Х
                 mtrXY[currIndex, 1] = Math.Cos(x);// запишем в массив У
                 currIndex++;
-                x += dx;// увеличение значения на шаг
+                x += dx; // увеличение значения на шаг
             }
             Display(ref mtrXY, currIndex, 0, 0); // вызов функции для вывода полученных значений ХУ
             Console.ReadKey();
