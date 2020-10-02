@@ -8,8 +8,7 @@ namespace Cos_от_x
         {
             for (int i = 0; i < size; i++)
             {
-                Console.WriteLine("Cos({0," + (-xmax) + "}) = {1," + (ymax) + "}",
-                string.Format("{0:N2}", arr[i, 0]), string.Format("{0:N2}", arr[i, 1]));
+                Console.WriteLine("Cos({0," + (-xmax) + "}) = {1," + (ymax) + "}", string.Format("{0:N2}", arr[i, 0]), string.Format("{0:N2}", arr[i, 1]));
             }
         }
         static void Main(string[] args)
